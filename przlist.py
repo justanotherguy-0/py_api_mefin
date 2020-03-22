@@ -4,7 +4,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 scope= ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]  
 credential=ServiceAccountCredentials.from_json_keyfile_name("C:/Users/Junior Sosa/Desktop/python_projects/my_sheets_api_project/creds.json",scope)
 client= gspread.authorize(credential)
-# Connection con la api 
+# Connection with the api 
 
 prznlist19 = client.open_by_key('1dYTYqWazRL4-WRSpkSkI46ly1wLTl7I_JJJ6vo74_xA')
 # Connection with the spreadsheet, specifically the priorization list of 2019
